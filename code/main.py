@@ -42,7 +42,7 @@ async def on_ready():
 async def on_message(message):
   if message.author==client.user:
     return
-  if message.content.startswith('$mensagem'):
+  if message.content.startswith('$message'):
     quote=get_quote()    
     await message.channel.send(quote)
     
